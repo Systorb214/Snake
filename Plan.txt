@@ -1,0 +1,46 @@
+Create the Menu class.
+
+Create an intro, and allow the player to set rules in an options menu.
+
+Create the AI.
+
+
+add a multiplayer mode, or play against AI
+(A* pathfinding will be necessary for AI)
+
+Difficulty settings:
+    add a hard mode where the snake gets faster with each growth
+    add a setting to change the speed at which food appears
+    add a setting to change the size of the playfield
+    add a setting to decide whether borders are walls or not.
+
+
+An example of some planning I did once. Do this more often:
+
+#How can I get the locations from the wall PFO's and put them into "changedNodes" from the PlayField instance?
+        #   add wall locations as Wall instance variables?
+        #       would add unnecessary bloat
+        #       could work, could grab wall locations from snake body
+        #       copying wall locations into a list would take time
+        #   
+        #   use dict keys returned from Draw method?
+        #       Would have to use Snake.Move() return value, which includes the head
+        #       Head movement not clearly defined, would need a method to remove it
+        #       Giving the dictionary ordered keys would be very costly.
+        #
+        #
+
+
+The menu class:
+
+    must have at least one element.
+
+    Can have any number of elements
+
+    Elements are displayed in a drop-down menu
+
+    If elements are selected, they run custom methods
+
+    If elements aren't selectable, they get skipped over
+
+    
